@@ -1,1 +1,20 @@
-/* Place CSS styles here */
+
+body {
+    background-color: rgb(210, 254, 209);
+    color: rgb(250, 255, 236);
+    text-align: center;
+    padding-bottom: 200px;
+}
+
+.cabinpic1-container {
+    position:relative;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.cabinpic1-container img {
+    width: 100%;
+    max-width: 2000px;
+    height: auto;
+    display: block;
+}
