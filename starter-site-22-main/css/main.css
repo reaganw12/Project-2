@@ -1,20 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    background-color: rgb(210, 254, 209);
-    color: rgb(250, 255, 236);
-    text-align: center;
-    padding-bottom: 200px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #2c3e50;
+    background-color: #ffffff;
 }
 
-.cabinpic1-container {
-    position:relative;
-    display: inline-block;
-    max-width: 100%;
-}
-
-.cabinpic1-container img {
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 50px 80px;
+    background-color: #ffffff;
     width: 100%;
-    max-width: 2000px;
-    height: auto;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.logo-main {
+    font-size: 28px;
+    font-weight: bold;
+    font-style: italic;
+    color: #4a3b68; 
+}
+
+.logo-sub {
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #7f8c8d;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px; 
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555555;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #4a3b68;
+}
+
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 90px); 
+    overflow: hidden;
+}
+
+.hero-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
+    filter: brightness(0.75) contrast(1.05); 
+}
+
+.hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-start; 
+    
+    padding: 0 100px; 
+    pointer-events: none;
+}
+
+.hero-icon {
+    font-size: 32px;
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
+.hero-title {
+    color: #ffffff;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+.hero-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.15rem;
+    margin-bottom: 40px;
+    max-width: 600px; 
+    line-height: 1.5;
+}
+
+.book-now-btn {
+    pointer-events: auto;
+    display: inline-block;
+    background-color: #8e7cc3; 
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 14px 28px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.book-now-btn:hover {
+    background-color: #7664ad;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px 30px;
+    }
+    .hero-content {
+        padding: 0 40px;
+    }
+    .hero-title {
+        font-size: 2.8rem;
+    }
 }
