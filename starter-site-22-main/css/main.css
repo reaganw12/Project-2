@@ -353,7 +353,7 @@ h3 {
     }
 
     .feature-item img {
-        width: 100%;            /* Forces images to stretch nicely to the phone edges */
+        width: 100%;
         height: auto;
     }
 }
