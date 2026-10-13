@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: rgb(44, 62, 80);
+    background-color: rgb(255, 173, 96);
+    margin-bottom: 200px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 50px 80px;
+    background-color: white;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.logo-main {
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(74, 59, 104); 
+}
+
+.logo-sub {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: rgb(127, 140, 141);
+}
+
+h2 {
+    font-size: 32pt;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+h3 {
+    font-size: 16pt;
+    text-align: center;
+    padding-top: 76px;
+}
+
+.policy-text {
+    text-align: center;
+    font-size: 12pt;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px; 
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555555;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: rgb(74, 59, 104);
+}
+
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 90px); 
+    overflow: hidden;
+}
+
+.hero-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.75) contrast(1.05); 
+}
+
+.hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-start; 
+    
+    padding: 0 100px; 
+    pointer-events: none;
+}
+
+.hero-icon {
+    font-size: 32px;
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
+.hero-title {
+    color: white;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+.hero-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.15rem;
+    margin-bottom: 40px;
+    max-width: 600px; 
+    line-height: 1.5;
+}
+
+.book-now-btn {
+    pointer-events: auto;
+    display: inline-block;
+    background-color: rgb(255, 173, 96); 
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 14px 28px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.book-now-btn:hover {
+    background-color: rgb(118, 100, 173);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px 30px;
+    }
+    .hero-content {
+        padding: 0 40px;
+    }
+    .hero-title {
+        font-size: 2.8rem;
+    }
+}
+
+.features-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 100px 80px 100px;
+    width: 100%;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    background-color: white;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    gap: 30px; 
+}
+
+.feature-item img {
+    width: 600px; 
+    height: 500px;
+    object-fit: cover;
+    border-radius: 4px;
+    flex-shrink: 0; 
+}
+
+.feature-item-content {
+    flex: 1;
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+    color: rgb(74, 59, 104);
+    margin-bottom: 12px;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.feature-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: rgb(85, 85, 85);
+}
+
+@media (max-width: 768px) {
+    .features-grid {
+        padding: 20px 30px;
+    }
+    
+    .feature-item {
+        flex-direction: column; 
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .feature-item img {
+        width: 100%;
+        height: 220px;
+    }
+}
+
+.waitlist-section {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.waitlist-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px black;
+    max-width: 550px;
+    width: 100%;
+}
+
+.waitlist-container h2 {
+    font-size: 2rem;
+    color: rgb(74, 59, 104); 
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.waitlist-container p {
+    font-size: 1rem;
+    color: rgb(85, 85, 85);
+    line-height: 1.5;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: rgb(44, 62, 80);
+}
+
+.form-group input {
+    padding: 14px;
+    font-size: 16px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.form-group input:focus {
+    border-color: rgb(74, 59, 104);
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: rgb(142, 124, 195); 
+    color: white;
+    border: none;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: rgb(118, 100, 173);
+    transform: translateY(-1px);
+}
+
+.submit-title {
+    color: white;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: -1px; 
+    text-align: center;
+    padding-top: 175px;
+
+}
+
+.submit-subtitle {
+    color: white;
+    font-size: 1.15rem;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.back-to-home-btn {
+    pointer-events: auto;
+    display: inline-block;
+    background-color: rgb(142, 124, 195); 
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 14px 28px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px white;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.back-to-home-btn:hover {
+    background-color: rgb(118, 100, 173);
+    transform: translateY(-2px);
+}
+
+.back-to-home-btn-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+@media (max-width: 768px) {
+    .features-grid {
+        flex-direction: column; 
+        padding: 20px 15px;
+    }
+
+    .feature-item img {
+        width: 100%;
+        height: auto;
+    }
+}
